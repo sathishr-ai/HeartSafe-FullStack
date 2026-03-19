@@ -8,7 +8,6 @@
 <br/>
 
 <p align="center">
-  <img src="https://img.shields.io/github/repo-size/sathishr-ai/HeartSafe-FullStack?style=for-the-badge&color=2ea44f" alt="Repo Size" />
   <img src="https://img.shields.io/badge/Architecture-Full--Stack_Microservices-ff69b4?style=for-the-badge" alt="Architecture" />
   <img src="https://img.shields.io/badge/Status-Production_Ready-2ea44f?style=for-the-badge&logo=vercel" alt="Status" />
   <img src="https://img.shields.io/badge/License-MIT-black?style=for-the-badge" alt="License" />
