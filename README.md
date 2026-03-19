@@ -8,9 +8,9 @@
 <br/>
 
 <p align="center">
-  <img src="https://img.shields.io/github/repo-size/sathishr-ai/heartsafe-backend?style=for-the-badge&color=2ea44f" alt="Repo Size" />
+  <img src="https://img.shields.io/github/repo-size/sathishr-ai/HeartSafe-FullStack?style=for-the-badge&color=2ea44f" alt="Repo Size" />
+  <img src="https://img.shields.io/badge/Architecture-Full--Stack_Microservices-ff69b4?style=for-the-badge" alt="Architecture" />
   <img src="https://img.shields.io/badge/Status-Live_Production-2ea44f?style=for-the-badge&logo=vercel" alt="Status" />
-  <img src="https://img.shields.io/badge/Version-v1.0.0-blue?style=for-the-badge" alt="Version" />
   <img src="https://img.shields.io/badge/License-MIT-black?style=for-the-badge" alt="License" />
 </p>
 
@@ -67,13 +67,13 @@ Cardiovascular diseases are the leading cause of death globally. In clinical dat
 
 **HeartSafe** was developed to bridge the gap between abstract machine learning algorithms and real-world clinical adoption. By unifying a highly-tuned **XGBoost Classifier** with a **Node.js REST API**, the application delivers real-time diagnostic assessments directly to medical professionals through a **Flutter-engineered** cross-platform interface.
 
-This ecosystem proves strict adherence to modern deployment pipelines, utilizing stateless JWT authentication, scalable NoSQL remote clustering (MongoDB Atlas), and responsive state-management.
+This ecosystem proves strict adherence to modern deployment pipelines, utilizing stateless JWT authentication, scalable NoSQL remote clustering (MongoDB Atlas), and robust state-management.
 
 ---
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=🏗️%20Deep-Level%20System%20Architecture&fontColor=ffffff&fontSize=22" width="100%"/>
 
-The ecosystem relies on an asynchronous, highly-available multi-tier architecture to securely relay patient arrays and offload heavy ML computations instantly out-of-thread.
+The HeartSafe ecosystem is engineered around an **Asynchronous Event-Driven Architecture**. By containerizing the Machine Learning (Python) execution away from the primary Node.js runtime thread, the system achieves maximum throughput without connection blocking.
 
 ```mermaid
 graph TD
@@ -81,35 +81,44 @@ graph TD
     classDef nodejs fill:#339933,stroke:#fff,stroke-width:2px,color:#fff;
     classDef python fill:#FFD43B,stroke:#fff,stroke-width:2px,color:#000;
     classDef db fill:#47A248,stroke:#fff,stroke-width:2px,color:#fff;
+    classDef security fill:#D14836,stroke:#fff,stroke-width:2px,color:#fff;
 
-    subgraph "Client Layer (Frontend)"
-        A[Flutter Android APK]:::frontend
-        B[Vanilla Web Application]:::frontend
+    subgraph "Client Layer (Frontend UIs)"
+        A[Android Flutter App]:::frontend
+        B[Netlify Web Portal]:::frontend
     end
 
-    subgraph "API Gateway Layer (Node.js)"
-        C{NGINX / Vercel Edge}
-        D(Express.js REST Router):::nodejs
-        E[JWT Auth & Middleware Bypass]:::nodejs
+    subgraph "API Gateway Layer (Node.js / Express)"
+        C{HTTPS Ingress Router}
+        D[Bcrypt / CORS / JWT Middleware]:::security
+        E(Express Controller Logic):::nodejs
     end
 
-    subgraph "Persistence & ML Computation Layer"
-        F[(MongoDB Atlas Cloud)]:::db
-        G[Python XGBoost Engine]:::python
+    subgraph "Machine Learning Engine (Python)"
+        F[XGBoost Inference Binary .pkl]:::python
+        G[SciKit-Learn Vectorizer]:::python
     end
 
-    A -->|JSON Payload via HTTPS| C
-    B -->|JSON Payload via HTTPS| C
+    subgraph "Persistence Layer (MongoDB Atlas)"
+        H[(Users Collection)]:::db
+        I[(Predictions Ledger)]:::db
+    end
+
+    A -->|JSON REST Payload| C
+    B -->|JSON REST Payload| C
+    
     C --> D
+    D -- Unauthorized --> 401[401 Denial]
+    D -- Verified --> E
     
-    D -->|Token Validate| E
-    E -- Success --> D
+    E <-->|Encrypted Read/Write| H
+    E <-->|Historical Logging| I
     
-    D <-->|Asynchronous CRUD| F
-    D <-->|Feature Vector Extraction| G
+    E <-->|Patient Feature Arrays| G
+    G -->|Dimensionality Formatting| F
+    F -->|Diagnostic Propensity %| E
     
-    G -->|Probability Score %| D
-    D -->|200 OK Response| C
+    E -->|JSON 200 OK| C
     C --> A
     C --> B
 ```
@@ -131,6 +140,37 @@ graph TD
 
 ---
 
+<img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=📂%20Comprehensive%20Repository%20Structure&fontColor=ffffff&fontSize=22" width="100%"/>
+
+```text
+HeartSafe-FullStack/
+│
+├── 📱 chd_flutter_app/                   # Native Android Front-End
+│   ├── lib/
+│   │   ├── main.dart                     # App Entrypoint & Theme Config
+│   │   ├── models/                       # Dart Serialized Data Classes
+│   │   ├── screens/                      # Interactive UIs (Batch Upload, Auth)
+│   │   └── services/                     # HTTPS REST API Interactors
+│   ├── android/                          # Native Kotlin/Java Engine
+│   └── pubspec.yaml                      # Flutter Dependency Graph
+│
+├── ⚙️ backend/                           # Node.js API Gateway
+│   ├── config/database.js                # MongoDB Atlas Initialization
+│   ├── controllers/                      # Core Execution Logic
+│   ├── middleware/                       # Zero-Trust JWT Security Walls
+│   ├── models/                           # Mongoose BSON DB Schemas
+│   ├── python/                           # XGBoost Analytics Microservice
+│   │   ├── train_model.py                # Model Training Pipeline
+│   │   ├── predict.py                    # Edge Inference Handler
+│   │   └── final_model.pkl               # Serialized XGBoost Binary
+│   ├── routes/                           # API Map Definitions
+│   └── server.js                         # Express.js Daemon Bootstrapper
+│
+└── 🌐 CChd.prediction.html               # Public Standalone Web Interface
+```
+
+---
+
 <img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=⚡%20Core%20Enterprise%20Features&fontColor=ffffff&fontSize=22" width="100%"/>
 
 ### 🔒 1. Robust Zero-Trust Authentication
@@ -144,25 +184,6 @@ graph TD
 
 ### 📑 3. Dynamic PDF Generation
 - Algorithmically constructs and exports comprehensive **PDF Medical Reports** summarizing feature importance, critical lifestyle adjustments, and automated dietary planning based on specific cholesterol/pressure thresholds.
-
----
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=📂%20File%20Structure&fontColor=ffffff&fontSize=22" width="100%"/>
-
-```text
-HeartSafe-Project/
-│
-├── chd_flutter_app/              # Native Android App (Flutter/Dart)
-│   ├── lib/screens/              # Cross-platform interactive views
-│   └── lib/services/             # API routing configurations
-│
-├── backend/                      # Node.js + Express.js API
-│   ├── config/database.js        # MongoDB Atlas routing
-│   ├── controllers/              # JWT & Authorization Logic
-│   └── models/                   # Mongoose DB Schemas
-│
-└── CChd.prediction.html          # Standalone public Web Application
-```
 
 ---
 
