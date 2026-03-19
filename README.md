@@ -120,12 +120,19 @@ graph LR
 
 <div align="center">
 
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
+![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
+
 | Operational Layer | Core Technology | Deep Engineering Rationale |
 |:---|:---|:---|
-| **Frontend UI/UX Engine** | ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=flat&logo=Flutter&logoColor=white) | Chosen for its strictly unified codebase. Compiles natively hyper-optimized ARM device code for Android hardware while concurrently rendering dynamic HTML5 payloads for Web deployment. |
-| **API Gateway Microservice** | ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/Express.js-%23404d59.svg?style=flat&logo=express&logoColor=%2361DAFB) | Chosen specifically to provide a highly-scalable, event-driven, non-blocking gateway capable of digesting immense, asynchronous clinical data arrays without crashing the main thread. |
-| **Persistence Database** | ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat&logo=mongodb&logoColor=white) | The infinitely flexible BSON document schema intrinsically natively supports deeply-nested health sub-arrays and wildly shifting historical diagnostic logging parameters. |
-| **Machine Learning Pipeline** | ![Python](https://img.shields.io/badge/Python-14354C?style=flat&logo=python&logoColor=white) **XGBoost** | Intentionally selected over Random Forest modeling for its phenomenally superior handling of starkly imbalanced medical data variables and optimized gradient-boosting analytical regularization matrix. |
+| **Frontend UI/UX Engine** | **Flutter** | Chosen for its strictly unified codebase. Compiles natively hyper-optimized ARM device code for Android hardware while concurrently rendering dynamic HTML5 payloads for Web deployment. |
+| **API Gateway Microservice** | **Node.js + Express** | Chosen specifically to provide a highly-scalable, event-driven, non-blocking gateway capable of digesting immense, asynchronous clinical data arrays without crashing the main thread. |
+| **Persistence Database** | **MongoDB Atlas** | The infinitely flexible BSON document schema intrinsically natively supports deeply-nested health sub-arrays and wildly shifting historical diagnostic logging parameters. |
+| **Machine Learning Pipeline** | **Python (XGBoost)** | Intentionally selected over Random Forest modeling for its phenomenally superior handling of starkly imbalanced medical data variables and optimized gradient-boosting analytical regularization matrix. |
 
 </div>
 
@@ -142,8 +149,65 @@ graph LR
 - Provides a proprietary administrative interface designed expressly for `multi-part/form-data` ingestions.
 - The Node.js worker iteratively maps, radically normalizes, and feeds mass data sets into the Python Engine using highly synchronized parallel array mapping matrices, generating complex chart plots near-instantly.
 
-### 📄 3. Autonomous Diagnostic Reporting
-- The system fundamentally algorithmically compiles variables and streams binary PDF document objects to the client. Reports explicitly detail dimensional feature extraction priorities, cholesterol reduction strategies, and predictive probability mappings.
+### 📄 3. Autonomous Predictive Engine (Sample Payload)
+The ecosystem algorithmically compiles variables and streams binary health mappings asynchronously. 
+
+<details>
+<summary><b>View Required XGBoost Inference Payload (JSON)</b></summary>
+
+```json
+POST /api/predict/single
+{
+  "age": 55,
+  "sex": 1,
+  "cp": 2,
+  "trestbps": 140,
+  "chol": 240,
+  "fbs": 0,
+  "restecg": 1,
+  "thalach": 150,
+  "exang": 0,
+  "oldpeak": 1.5,
+  "slope": 2,
+  "ca": 0,
+  "thal": 2
+}
+
+// SUCCESS RESPONSE: 200 OK
+{
+  "chd_probability": 87.4,
+  "risk_category": "High Risk",
+  "generated_report_id": "REP-849-2A"
+}
+```
+</details>
+
+---
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=🚀%20Zero-to-Deployment%20Sandbox&fontColor=ffffff&fontSize=22" width="100%"/>
+
+Want to run the pipeline locally and intercept the Neural Network payloads?
+
+```bash
+# 1. Clone the master matrix
+git clone https://github.com/sathishr-ai/HeartSafe-FullStack.git
+
+# 2. Boot the API Gateway
+cd HeartSafe-FullStack/backend
+npm install
+npm run dev
+
+# 3. Mount the Global Environment (.env)
+# Create a .env file containing your cluster hashes
+MONGO_URI=mongodb+srv://<user>:<password>@cluster0.db.net/heartsafe
+JWT_SECRET=your_hyper_secure_hash
+PORT=5000
+
+# 4. Launch the Native Frontend (Android)
+cd ../chd_flutter_app
+flutter pub get
+flutter run
+```
 
 ---
 
