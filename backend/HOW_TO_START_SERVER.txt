@@ -1,0 +1,140 @@
+════════════════════════════════════════════════════════════════════
+                    START BACKEND SERVER
+════════════════════════════════════════════════════════════════════
+
+⚠️  YOU MUST DO THIS BEFORE ACCESSING THE FRONTEND!
+
+════════════════════════════════════════════════════════════════════
+METHOD 1: EASIEST WAY (Double-click the file)
+════════════════════════════════════════════════════════════════════
+
+1. Go to this folder:
+   C:\Users\SATHISH\CP FODS CHD\backend
+
+2. Find the file: START_SERVER.bat
+
+3. DOUBLE-CLICK it to start the server
+
+4. A command window will open showing:
+   ✅ Server running on port 5000
+   ✅ Connected to MongoDB
+
+5. KEEP THIS WINDOW OPEN while using the system
+
+
+════════════════════════════════════════════════════════════════════
+METHOD 2: USING COMMAND PROMPT
+════════════════════════════════════════════════════════════════════
+
+1. Press: Windows Key + R
+
+2. Type: cmd
+
+3. Press: Enter
+
+4. Copy and paste this command:
+   cd "C:\Users\SATHISH\CP FODS CHD\backend" && npm start
+
+5. Press: Enter
+
+6. Wait for the message:
+   ✅ Server running on port 5000
+
+7. KEEP THIS WINDOW OPEN
+
+
+════════════════════════════════════════════════════════════════════
+METHOD 3: USING POWERSHELL
+════════════════════════════════════════════════════════════════════
+
+1. Right-click on desktop
+
+2. Click: "Open PowerShell window here"
+
+3. Paste this command:
+   cd "C:\Users\SATHISH\CP FODS CHD\backend"; npm start
+
+4. Press: Enter
+
+5. Wait for:
+   ✅ Server running on port 5000
+
+
+════════════════════════════════════════════════════════════════════
+AFTER STARTING THE SERVER
+════════════════════════════════════════════════════════════════════
+
+1. Leave the server window OPEN in the background
+
+2. Go to your browser
+
+3. Open the frontend:
+   C:\Users\SATHISH\CP FODS CHD\CChd.prediction.html
+
+4. "Connection Error" should disappear
+
+5. Login with:
+   Username: Sathish
+   Password: password123
+
+6. You're ready to use the system!
+
+
+════════════════════════════════════════════════════════════════════
+IF YOU STILL GET "CONNECTION ERROR"
+════════════════════════════════════════════════════════════════════
+
+Try this:
+
+1. Stop the current server (Ctrl+C in command window)
+
+2. Type this command:
+   npm install
+
+3. After it finishes, type:
+   npm start
+
+4. Refresh the browser
+
+
+════════════════════════════════════════════════════════════════════
+IMPORTANT NOTES
+════════════════════════════════════════════════════════════════════
+
+✓ Server MUST be running on port 5000
+✓ Keep server window OPEN
+✓ Don't close the server window while using the system
+✓ If you close it, frontend will show "Connection Error"
+✓ Just restart the server if connection fails
+✓ Backend and frontend must be running at same time
+
+
+════════════════════════════════════════════════════════════════════
+TROUBLESHOOTING
+════════════════════════════════════════════════════════════════════
+
+Q: "Port 5000 is already in use"
+A: Restart your computer OR kill the process:
+   netstat -ano | findstr :5000
+   taskkill /PID <number> /F
+
+Q: "npm: command not found"
+A: Node.js not installed. Install from nodejs.org
+
+Q: "Module not found"
+A: Run: npm install
+
+Q: Still getting Connection Error
+A: Make sure backend folder path is correct:
+   C:\Users\SATHISH\CP FODS CHD\backend
+
+
+════════════════════════════════════════════════════════════════════
+READY? LET'S START!
+════════════════════════════════════════════════════════════════════
+
+👉 CHOOSE ONE METHOD ABOVE AND START THE SERVER NOW!
+
+Then refresh the browser and login!
+
+════════════════════════════════════════════════════════════════════
