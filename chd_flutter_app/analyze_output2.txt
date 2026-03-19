@@ -1,0 +1,30 @@
+Analyzing chd_flutter_app...                                    
+
+   info - Use 'const' with the constructor to improve performance - lib\screens\home_screen.dart:67:35 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\home_screen.dart:159:56 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\screens\home_screen.dart:219:17 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\screens\home_screen.dart:220:29 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\screens\home_screen.dart:221:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\screens\home_screen.dart:226:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\screens\home_screen.dart:231:21 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\login_screen.dart:80:58 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\login_screen.dart:121:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\login_screen.dart:127:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\login_screen.dart:199:64 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\login_screen.dart:203:42 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\screens\prediction_screen.dart:102:18 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\screens\prediction_screen.dart:114:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\screens\prediction_screen.dart:144:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\screens\prediction_screen.dart:173:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\screens\prediction_screen.dart:209:13 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\prediction_screen.dart:255:50 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\prediction_screen.dart:258:54 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\screens\prediction_screen.dart:331:7 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\prediction_screen.dart:373:44 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\screens\result_screen.dart:112:18 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\result_screen.dart:128:55 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\result_screen.dart:131:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\result_screen.dart:160:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\result_screen.dart:163:46 - deprecated_member_use
+
+26 issues found. (ran in 14.2s)

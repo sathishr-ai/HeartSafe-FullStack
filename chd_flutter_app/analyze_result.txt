@@ -1,0 +1,19 @@
+Analyzing chd_flutter_app...                                    
+
+   info - Use 'const' with the constructor to improve performance - lib\screens\home_screen.dart:202:17 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\screens\home_screen.dart:203:29 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\screens\home_screen.dart:204:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\screens\home_screen.dart:209:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\screens\home_screen.dart:214:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\screens\prediction_screen.dart:129:17 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\screens\prediction_screen.dart:170:17 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\screens\prediction_screen.dart:207:17 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\screens\prediction_screen.dart:252:17 - prefer_const_constructors
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\screens\prediction_screen.dart:364:7 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\widgets\animated_bg.dart:71:7 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\widgets\animated_bg.dart:72:7 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\widgets\animated_bg.dart:73:7 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\widgets\animated_bg.dart:74:7 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\widgets\animated_bg.dart:75:7 - prefer_const_constructors
+
+15 issues found. (ran in 22.4s)

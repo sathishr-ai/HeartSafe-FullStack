@@ -1,0 +1,77 @@
+════════════════════════════════════════════════════════════════════
+           TEST THE BACKEND API - POSTMAN QUICK TEST
+════════════════════════════════════════════════════════════════════
+
+BEFORE TESTING:
+✓ Backend should be running: npm start
+✓ Should see: 🚀 Server running on port 5000
+
+════════════════════════════════════════════════════════════════════
+TEST 1: Health Check (No Login Required)
+════════════════════════════════════════════════════════════════════
+
+URL: http://localhost:5000/api/health
+METHOD: GET
+
+Expected Response:
+{
+  "success": true,
+  "message": "HeartSafe API is running"
+}
+
+
+════════════════════════════════════════════════════════════════════
+TEST 2: Login (This is what's failing)
+════════════════════════════════════════════════════════════════════
+
+URL: http://localhost:5000/api/auth/login
+METHOD: POST
+Headers: Content-Type: application/json
+
+Body (JSON):
+{
+  "username": "Sathish",
+  "password": "password123"
+}
+
+Expected Response:
+{
+  "success": true,
+  "message": "Login successful",
+  "token": "token_Sathish_...",
+  "user": {
+    "username": "Sathish",
+    "role": "doctor"
+  }
+}
+
+
+════════════════════════════════════════════════════════════════════
+EASY TEST USING CURL (In Command Prompt)
+════════════════════════════════════════════════════════════════════
+
+Test Health:
+curl http://localhost:5000/api/health
+
+Test Login:
+curl -X POST http://localhost:5000/api/auth/login -H "Content-Type: application/json" -d "{\"username\":\"Sathish\",\"password\":\"password123\"}"
+
+
+════════════════════════════════════════════════════════════════════
+IF TESTS PASS:
+════════════════════════════════════════════════════════════════════
+✓ Backend API is working correctly
+✓ Issue is in frontend connection
+✓ Check browser console (F12) for errors
+
+
+════════════════════════════════════════════════════════════════════
+IF TESTS FAIL:
+════════════════════════════════════════════════════════════════════
+✗ Backend has an issue
+✗ Stop backend (Ctrl+C)
+✗ Run: npm install
+✗ Run: npm start again
+
+
+════════════════════════════════════════════════════════════════════

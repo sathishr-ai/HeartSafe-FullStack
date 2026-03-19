@@ -1,0 +1,176 @@
+========================================
+HEARTSAFE - CHD RISK PREDICTION SYSTEM
+SETUP & RUNNING INSTRUCTIONS
+========================================
+
+PROJECT STRUCTURE:
+-------------------
+C:\Users\SATHISH\CP FODS CHD\
+├── backend/                    (Node.js Express server)
+│   ├── server.js              (Main server entry point)
+│   ├── package.json
+│   ├── config/
+│   │   └── database.js        (MongoDB configuration)
+│   ├── routes/
+│   │   ├── auth.js           (Login/logout endpoints)
+│   │   ├── predictions.js    (Risk prediction endpoints)
+│   │   ├── exports.js        (PDF/CSV export endpoints)
+│   │   └── followup.js       (Follow-up scheduling endpoints)
+│   └── middleware/
+│       └── errorHandler.js   (Error handling middleware)
+│
+└── CChd.prediction.html        (Frontend - Single HTML file)
+
+
+STEP 1: START THE BACKEND SERVER
+---------------------------------
+1. Open Command Prompt or PowerShell
+2. Navigate to the backend folder:
+   cd "C:\Users\SATHISH\CP FODS CHD\backend"
+
+3. Install dependencies (if not already done):
+   npm install
+
+4. Start the server:
+   npm start
+   
+   OR directly:
+   node server.js
+
+Expected output:
+   Server running on port 5000
+   Connected to MongoDB successfully
+
+
+STEP 2: OPEN THE FRONTEND IN BROWSER
+-------------------------------------
+1. Open your web browser (Chrome, Firefox, Edge)
+2. Navigate to:
+   file:///C:/Users/SATHISH/CP%20FODS%20CHD/CChd.prediction.html
+
+   OR use this path in address bar:
+   C:\Users\SATHISH\CP FODS CHD\CChd.prediction.html
+
+
+STEP 3: LOGIN TO THE SYSTEM
+----------------------------
+Use one of these credentials:
+
+Username: Sathish      | Password: password123
+Username: Jaipreethika | Password: password123
+Username: admin        | Password: admin123
+
+
+STEP 4: USE THE SYSTEM
+----------------------
+
+A. SINGLE PATIENT PREDICTION:
+   1. Go to "Single Patient Assessment" tab
+   2. Enter patient details (age, gender, cholesterol, etc.)
+   3. Click "Assess CHD Risk" button
+   4. View results, charts, and preventive advisory
+   5. Optionally schedule follow-up
+
+B. BATCH PREDICTION:
+   1. Go to "Batch Dataset Prediction" tab
+   2. Download the CSV template
+   3. Fill in patient data in the CSV file
+   4. Upload the CSV file
+   5. Click "Run Batch Prediction & Advisory"
+   6. View results table and charts
+   7. Export results as CSV
+
+C. GENERATE REPORTS:
+   1. After prediction, click "Generate Detailed Advisory Report"
+   2. For batch data, click "Generate High-Risk Report" to download
+
+
+API ENDPOINTS (for reference/testing):
+---------------------------------------
+
+Authentication:
+  POST /api/auth/login
+  Headers: Content-Type: application/json
+  Body: { "username": "Sathish", "password": "password123" }
+
+  POST /api/auth/logout
+
+Risk Prediction:
+  POST /api/predictions/single
+  Body: { age, gender, totalChol, hdl, systolic, diastolic, smoking, diabetes, family }
+  
+  POST /api/predictions/batch
+  Body: { patients: [ { age, gender, ... }, ... ] }
+  
+  GET /api/predictions/list
+
+Exports:
+  POST /api/exports/pdf
+  POST /api/exports/csv
+
+Follow-ups:
+  POST /api/followups/schedule
+  GET /api/followups/list
+  PUT /api/followups/:id
+  DELETE /api/followups/:id
+
+
+TROUBLESHOOTING:
+----------------
+
+Q: Backend won't start
+A: Make sure Node.js is installed, run "npm install" first
+
+Q: Frontend can't reach backend
+A: - Ensure backend is running on port 5000
+   - Check browser console for CORS errors
+   - Frontend will fallback to local calculation if backend unavailable
+
+Q: Login fails
+A: - Use exact credentials listed above
+   - Username is case-sensitive
+   - Check browser console for error messages
+
+Q: Predictions not working
+A: - Make sure backend server is running
+   - Check that all form fields are filled
+   - Look at browser console for API errors
+
+Q: CSV upload fails
+A: - Make sure CSV has correct columns: age, gender, cholesterol, hdl, systolic, diastolic, smoking, diabetes, family
+   - Use the downloaded template as reference
+   - Check file size is reasonable
+
+
+DATABASE NOTES:
+---------------
+- MongoDB is configured but optional for initial testing
+- Currently using in-memory storage for predictions
+- To use MongoDB: ensure MongoDB is running on localhost:27017
+- Update MONGO_URI in backend/.env if using different MongoDB location
+
+
+FEATURES:
+---------
+✓ User authentication (3 test users)
+✓ Single patient CHD risk assessment
+✓ Batch population analysis
+✓ Risk factor visualization with charts
+✓ Personalized preventive recommendations
+✓ Follow-up scheduling
+✓ Report generation
+✓ CSV export
+✓ Session management
+✓ Responsive UI design
+
+
+SUPPORTED BROWSERS:
+-------------------
+✓ Chrome
+✓ Firefox
+✓ Microsoft Edge
+✓ Safari
+
+========================================
+For questions, check browser console logs
+========================================
