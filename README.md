@@ -73,54 +73,38 @@ This ecosystem proves strict adherence to modern deployment pipelines, utilizing
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=🏗️%20Deep-Level%20System%20Architecture&fontColor=ffffff&fontSize=22" width="100%"/>
 
-The HeartSafe ecosystem is engineered around an **Asynchronous Event-Driven Architecture**. By containerizing the Machine Learning (Python) execution away from the primary Node.js runtime thread, the system achieves maximum throughput without connection blocking.
+To ensure absolute clarity for technical recruiters, the system architecture operates on a streamlined **3-Tier Pipeline**. It securely channels medical input through an encrypted NodeJS Gateway, processes diagnostics asynchronously in Python, and persists profiles globally via MongoDB.
 
 ```mermaid
-graph TD
-    classDef frontend fill:#02569B,stroke:#fff,stroke-width:2px,color:#fff;
-    classDef nodejs fill:#339933,stroke:#fff,stroke-width:2px,color:#fff;
-    classDef python fill:#FFD43B,stroke:#fff,stroke-width:2px,color:#000;
-    classDef db fill:#47A248,stroke:#fff,stroke-width:2px,color:#fff;
-    classDef security fill:#D14836,stroke:#fff,stroke-width:2px,color:#fff;
-
-    subgraph "Client Layer (Frontend UIs)"
-        A[Android Flutter App]:::frontend
-        B[Netlify Web Portal]:::frontend
+graph LR
+    %% Core Interfaces
+    subgraph "1. Client Interfaces"
+        direction TB
+        A[📱 Flutter Android App]
+        B[🌐 Netlify Web Portal]
     end
 
-    subgraph "API Gateway Layer (Node.js / Express)"
-        C{HTTPS Ingress Router}
-        D[Bcrypt / CORS / JWT Middleware]:::security
-        E(Express Controller Logic):::nodejs
+    %% Network & Security
+    subgraph "2. API Gateway (Node.js)"
+        direction TB
+        C{HTTPS JSON Payload}
+        D[🔒 JWT Security Middleware]
+        E(⚙️ Express REST Controllers)
     end
 
-    subgraph "Machine Learning Engine (Python)"
-        F[XGBoost Inference Binary .pkl]:::python
-        G[SciKit-Learn Vectorizer]:::python
+    %% Core computation
+    subgraph "3. AI & Data Layer"
+        direction TB
+        F[(🌿 MongoDB Atlas)]
+        G[🤖 Python XGBoost Engine]
     end
 
-    subgraph "Persistence Layer (MongoDB Atlas)"
-        H[(Users Collection)]:::db
-        I[(Predictions Ledger)]:::db
-    end
-
-    A -->|JSON REST Payload| C
-    B -->|JSON REST Payload| C
-    
+    %% Flow Dynamics
+    A & B --> C
     C --> D
-    D -- Unauthorized --> 401[401 Denial]
-    D -- Verified --> E
-    
-    E <-->|Encrypted Read/Write| H
-    E <-->|Historical Logging| I
-    
-    E <-->|Patient Feature Arrays| G
-    G -->|Dimensionality Formatting| F
-    F -->|Diagnostic Propensity %| E
-    
-    E -->|JSON 200 OK| C
-    C --> A
-    C --> B
+    D --> E
+    E <-->|Patient Profiles| F
+    E <-->|Predictive Medical Data| G
 ```
 
 ---
