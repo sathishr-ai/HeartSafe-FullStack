@@ -77,34 +77,41 @@ To ensure absolute clarity for technical recruiters, the system architecture ope
 
 ```mermaid
 graph LR
-    %% Core Interfaces
+    %% Core Styling Classes
+    classDef frontend fill:#02569B,stroke:#fff,stroke-width:2px,color:#fff,font-weight:bold;
+    classDef backend fill:#339933,stroke:#fff,stroke-width:2px,color:#fff,font-weight:bold;
+    classDef database fill:#47A248,stroke:#fff,stroke-width:2px,color:#fff,font-weight:bold;
+    classDef ai fill:#FFD43B,stroke:#000,stroke-width:2px,color:#000,font-weight:bold;
+    classDef security fill:#D14836,stroke:#fff,stroke-width:2px,color:#fff,font-weight:bold;
+    
+    %% Tier 1: Interfaces
     subgraph "1. Client Interfaces"
         direction TB
-        A[📱 Flutter Android App]
-        B[🌐 Netlify Web Portal]
+        A([📱 Flutter Android App]):::frontend
+        B([🌐 Netlify Web Portal]):::frontend
     end
 
-    %% Network & Security
-    subgraph "2. API Gateway (Node.js)"
+    %% Tier 2: API
+    subgraph "2. API Gateway"
         direction TB
-        C{HTTPS JSON Payload}
-        D[🔒 JWT Security Middleware]
-        E(⚙️ Express REST Controllers)
+        C{HTTPS Payload}
+        D[[🔒 JWT Middleware]]:::security
+        E(⚙️ Node.js REST API):::backend
     end
 
-    %% Core computation
+    %% Tier 3: Compute
     subgraph "3. AI & Data Layer"
         direction TB
-        F[(🌿 MongoDB Atlas)]
-        G[🤖 Python XGBoost Engine]
+        F[(🌿 MongoDB Atlas)]:::database
+        G{{🤖 Python XGBoost Engine}}:::ai
     end
 
-    %% Flow Dynamics
-    A & B --> C
-    C --> D
-    D --> E
-    E <-->|Patient Profiles| F
-    E <-->|Predictive Medical Data| G
+    %% Directional Flow
+    A & B -->|Raw Data| C
+    C -->|Authenticate| D
+    D -->|Authorized| E
+    E <-->|Encrypted Profiles| F
+    E <-->|Clinical Vectors| G
 ```
 
 ---
