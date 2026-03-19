@@ -1,22 +1,22 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" alt="Heart" width="70" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" alt="Heart" width="80" />
 
-# 🤍 HeartSafe 🤍
-### AI-Powered Coronary Heart Disease Predictive Ecosystem
+# 🤍 HeartSafe Ecosystem 🤍
+<p><i>An Enterprise-Grade, AI-Powered Coronary Heart Disease Diagnostic Pipeline</i></p>
 
 <br/>
 
 <p align="center">
   <img src="https://img.shields.io/github/repo-size/sathishr-ai/HeartSafe-FullStack?style=for-the-badge&color=2ea44f" alt="Repo Size" />
   <img src="https://img.shields.io/badge/Architecture-Full--Stack_Microservices-ff69b4?style=for-the-badge" alt="Architecture" />
-  <img src="https://img.shields.io/badge/Status-Live_Production-2ea44f?style=for-the-badge&logo=vercel" alt="Status" />
+  <img src="https://img.shields.io/badge/Status-Production_Ready-2ea44f?style=for-the-badge&logo=vercel" alt="Status" />
   <img src="https://img.shields.io/badge/License-MIT-black?style=for-the-badge" alt="License" />
 </p>
 
-<p align="center">
-  <b>A full-stack, cross-platform diagnostic pipeline engineered to analyze complex clinical metrics and instantly forecast 10-year risk profiles for Coronary Heart Disease (CHD). Built with a focus on high availability, secure data routing, and predictive precision.</b>
-</p>
+<blockquote>
+  <b>A highly scalable, cross-platform health analytics pipeline engineered to process complex clinical patient metrics and instantly formulate 10-year CHD risk vectors. Optimized strictly for high availability, zero-trust data security, and predictive diagnostic precision.</b>
+</blockquote>
 
 <br/>
 
@@ -38,7 +38,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=📸%20Live%20Application%20Interfaces&fontColor=ffffff&fontSize=22" width="100%"/>
 
-> *Actual application UI rendering live data bridging the Flutter ecosystem and responsive HTML5.*
+> *Live rendering of isolated clinical data parameters bridging the Native Android Kotlin ecosystem with responsive HTML5 payloads.*
 
 <div align="center">
   <table>
@@ -63,11 +63,11 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=🎯%20Executive%20Problem%20Statement&fontColor=ffffff&fontSize=22" width="100%"/>
 
-Cardiovascular diseases are the leading cause of death globally. In clinical data evaluation, speed and predictive accuracy are paramount. 
+Cardiovascular anomalies are universally the leading cause of global mortality. Within modern intensive care and diagnostic data evaluation, **speed, predictive accuracy, and scalability are actively paramount.**
 
-**HeartSafe** was developed to bridge the gap between abstract machine learning algorithms and real-world clinical adoption. By unifying a highly-tuned **XGBoost Classifier** with a **Node.js REST API**, the application delivers real-time diagnostic assessments directly to medical professionals through a **Flutter-engineered** cross-platform interface.
+**HeartSafe** was physically developed to architect a bridge between theoretical abstract machine learning algorithms and real-world clinical adoption. By securely networking a heavily-tuned **XGBoost Inference microservice** underneath an asynchronous **Node.js REST Gateway**, this architecture successfully relays real-time predictive diagnostic assessments directly back to the hands of medical professionals through a **Flutter cross-platform client**.
 
-This ecosystem proves strict adherence to modern deployment pipelines, utilizing stateless JWT authentication, scalable NoSQL remote clustering (MongoDB Atlas), and robust state-management.
+This ecosystem definitively proves strict adherence to modern deployment pipelines, actively highlighting stateless JWT authentication walls, remote NoSQL clustering (MongoDB Atlas), and robust edge management.
 
 ---
 
@@ -120,70 +120,75 @@ graph LR
 
 <div align="center">
 
-| Layer | Technology | Engineering Rationale |
+| Operational Layer | Core Technology | Deep Engineering Rationale |
 |:---|:---|:---|
-| **Frontend UI/UX** | ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=flat&logo=Flutter&logoColor=white) | Chosen for its unified codebase, compiling native ARM code for Android while concurrently rendering dynamic HTML5/Canvas for the Web platform. |
-| **Backend API** | ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/Express.js-%23404d59.svg?style=flat&logo=express&logoColor=%2361DAFB) | Provides an asynchronous, event-driven gateway capable of handling dense concurrent clinical data uploads seamlessly. |
-| **Database** | ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat&logo=mongodb&logoColor=white) | Flexible BSON document schema natively supports complex, deeply-nested patient health arrays and historical predictive logs. |
-| **Machine Learning** | ![Python](https://img.shields.io/badge/Python-14354C?style=flat&logo=python&logoColor=white) **XGBoost** | Selected over Random Forest for its superior handling of imbalanced medical datasets and optimized gradient boosting regularization, achieving >90% precision. |
+| **Frontend UI/UX Engine** | ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=flat&logo=Flutter&logoColor=white) | Chosen for its strictly unified codebase. Compiles natively hyper-optimized ARM device code for Android hardware while concurrently rendering dynamic HTML5 payloads for Web deployment. |
+| **API Gateway Microservice** | ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/Express.js-%23404d59.svg?style=flat&logo=express&logoColor=%2361DAFB) | Chosen specifically to provide a highly-scalable, event-driven, non-blocking gateway capable of digesting immense, asynchronous clinical data arrays without crashing the main thread. |
+| **Persistence Database** | ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat&logo=mongodb&logoColor=white) | The infinitely flexible BSON document schema intrinsically natively supports deeply-nested health sub-arrays and wildly shifting historical diagnostic logging parameters. |
+| **Machine Learning Pipeline** | ![Python](https://img.shields.io/badge/Python-14354C?style=flat&logo=python&logoColor=white) **XGBoost** | Intentionally selected over Random Forest modeling for its phenomenally superior handling of starkly imbalanced medical data variables and optimized gradient-boosting analytical regularization matrix. |
 
 </div>
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=📂%20Comprehensive%20Repository%20Structure&fontColor=ffffff&fontSize=22" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=⚡%20Core%20Enterprise%20Features&fontColor=ffffff&fontSize=22" width="100%"/>
+
+### 🔐 1. Absolute Zero-Trust Architecture
+- **Stateless Verification:** The entire gateway is driven by isolated `JWT` (JSON Web Token) infrastructure.
+- **Cryptographic Hashing:** Clinical user authentication credentials are mathematically obscured through intense `Bcrypt` multi-pass salting operations prior to database entry.
+- **Cross-Origin Locking:** Explicit environment-based **CORS** protocols strictly deny ingress payloads from unverified external host domains.
+
+### 📈 2. Distributed Micro-Batch Processing
+- Provides a proprietary administrative interface designed expressly for `multi-part/form-data` ingestions.
+- The Node.js worker iteratively maps, radically normalizes, and feeds mass data sets into the Python Engine using highly synchronized parallel array mapping matrices, generating complex chart plots near-instantly.
+
+### 📄 3. Autonomous Diagnostic Reporting
+- The system fundamentally algorithmically compiles variables and streams binary PDF document objects to the client. Reports explicitly detail dimensional feature extraction priorities, cholesterol reduction strategies, and predictive probability mappings.
+
+---
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=📂%20Comprehensive%20Repository%20Architecture&fontColor=ffffff&fontSize=22" width="100%"/>
+
+<details>
+<summary><b>🔍 Tap Here to Expand the Internal Directory Map</b></summary>
+<br/>
 
 ```text
 HeartSafe-FullStack/
 │
-├── 📱 chd_flutter_app/                   # Native Android Front-End
+├── 📱 chd_flutter_app/                   # Local Native Kotlin/Dart Compilation Unit
 │   ├── lib/
-│   │   ├── main.dart                     # App Entrypoint & Theme Config
-│   │   ├── models/                       # Dart Serialized Data Classes
-│   │   ├── screens/                      # Interactive UIs (Batch Upload, Auth)
-│   │   └── services/                     # HTTPS REST API Interactors
-│   ├── android/                          # Native Kotlin/Java Engine
-│   └── pubspec.yaml                      # Flutter Dependency Graph
+│   │   ├── main.dart                     # Flutter App Initialization Bootstrap
+│   │   ├── models/                       # Type-Safe Object DTO Classes
+│   │   ├── screens/                      # Interactive Front-End Stateless/Stateful Trees
+│   │   └── services/                     # WebClient HTTPS Network Interactors
+│   └── pubspec.yaml                      # Root Dependency Ledger
 │
-├── ⚙️ backend/                           # Node.js API Gateway
-│   ├── config/database.js                # MongoDB Atlas Initialization
-│   ├── controllers/                      # Core Execution Logic
-│   ├── middleware/                       # Zero-Trust JWT Security Walls
-│   ├── models/                           # Mongoose BSON DB Schemas
-│   ├── python/                           # XGBoost Analytics Microservice
-│   │   ├── train_model.py                # Model Training Pipeline
-│   │   ├── predict.py                    # Edge Inference Handler
-│   │   └── final_model.pkl               # Serialized XGBoost Binary
-│   ├── routes/                           # API Map Definitions
-│   └── server.js                         # Express.js Daemon Bootstrapper
+├── ⚙️ backend/                           # Node.js V8 Vercel Server Allocation 
+│   ├── config/database.js                # Secure Asynchronous Cloud Ingress Configuration
+│   ├── controllers/                      # Core Route Algorithmic Execution Logic
+│   ├── middleware/                       # Critical Authorization Wall Logic
+│   ├── models/                           # Enforced Mongoose Relational Schemas
+│   ├── python/                           # XGBoost Python Environment
+│   │   ├── train_model.py                # Hyper-parameter Tuning Logic
+│   │   ├── predict.py                    # Inference Terminal Process Map
+│   │   └── final_model.pkl               # Frozen Binary Weights Matrix
+│   ├── routes/                           # API URI Payload Translators
+│   └── server.js                         # Root App Daemon Initialization
 │
-└── 🌐 CChd.prediction.html               # Public Standalone Web Interface
+└── 🌐 CChd.prediction.html               # Headless Client Render Instance
 ```
 
----
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=⚡%20Core%20Enterprise%20Features&fontColor=ffffff&fontSize=22" width="100%"/>
-
-### 🔒 1. Robust Zero-Trust Authentication
-- Implemented **Stateless JWT (JSON Web Tokens)** architecture.
-- Passwords are cryptographically hashed via **Bcrypt** prior to database insertion.
-- Enforced strict **CORS policies** allowing bypass only on verified production host domains.
-
-### 📊 2. Intelligent Batch Processing
-- Administrative dashboard featuring an automated CSV multi-patient ingestion pipeline.
-- Backend iteratively parses, normalizes, and feeds mass datasets into the ML Engine via parallel routing, mapping fully formatted visual charts to the frontend state.
-
-### 📑 3. Dynamic PDF Generation
-- Algorithmically constructs and exports comprehensive **PDF Medical Reports** summarizing feature importance, critical lifestyle adjustments, and automated dietary planning based on specific cholesterol/pressure thresholds.
+</details>
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=👨‍💻%20Meet%20the%20Engineer&fontColor=ffffff&fontSize=22" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=👨‍💻%20Direct%20Engineer%20Contact&fontColor=ffffff&fontSize=22" width="100%"/>
 
 <div align="center">
   <h3>Sathish R</h3>
-  <b>Full-Stack Developer | Aspiring Software Engineer | AI/ML Specialist</b>
-  <p>I am passionately focused on architecting scalable software solutions that actively leverage artificial intelligence to solve complex, high-impact problems in the real world.</p>
+  <b>Full-Stack Architect | Emerging Software Engineer | AI Integration Specialist</b>
+  <p>I am fervently dedicated to architecting massively scalable networking solutions that tangibly integrate bleeding-edge artificial intelligence to neutralize deep, real-world complexity issues.</p>
   
   <a href="https://github.com/sathishr-ai">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
