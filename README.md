@@ -193,10 +193,10 @@ HeartSafe-FullStack/
   <a href="https://github.com/sathishr-ai">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
-  <a href="#your-linkedin">
+  <a href="https://www.linkedin.com/in/sathish-r-2393412a5">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
-  <a href="mailto:your-email@example.com">
+  <a href="mailto:sathxsh57@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
   </a>
 </div>
