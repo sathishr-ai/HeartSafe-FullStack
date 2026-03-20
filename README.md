@@ -53,6 +53,11 @@
   <img src="https://github.com/user-attachments/assets/f613efdf-d333-4570-a201-eaadf5ec280b" alt="Mobile Risk Dashboard" width="220" />
 </p>
 
+### 📱 Database
+<p align="center">
+  <img src="<img width="1875" height="800" alt="Screenshot 2026-03-20 222843" src="https://github.com/user-attachments/assets/2d4a2f09-4781-4ece-ac39-f3200d925ad7" />
+</p>
+
 ---
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=🎯%20Executive%20Problem%20Statement&fontColor=ffffff&fontSize=22" width="100%"/>
