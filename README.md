@@ -317,5 +317,6 @@ HeartSafe-FullStack/
 
 <br/>
 <div align="center">
+  <p>If this project inspired you or helped you learn, please consider giving it a ⭐</p>
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer"/>
 </div>
