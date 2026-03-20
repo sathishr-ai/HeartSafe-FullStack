@@ -39,28 +39,19 @@
 
 > *Live rendering of isolated clinical data parameters bridging the Native Android Kotlin ecosystem with responsive HTML5 payloads.*
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center"><b>🌐 Web Platform Interface</b></td>
-      <td align="center"><b>📱 Mobile Android Interface</b></td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <!-- WEB APP SCREENSHOTS -->
-        <img src="https://github.com/user-attachments/assets/9a111726-f88e-4ce0-8159-a0b3c91c1af8" alt="Web Prediction Setup" width="450"/>
-        <br/><br/>
-        <img src="https://github.com/user-attachments/assets/02b1ebf4-88ef-4c61-8c51-3218ef00aa57" alt="Web Prediction Output" width="450"/>
-      </td>
-      <td valign="top">
-        <!-- MOBILE APP SCREENSHOTS -->
-        <img src="https://github.com/user-attachments/assets/ec77921c-62df-4b4a-8870-0557e889e2d1" alt="Mobile Login" width="220"/>
-        <br/><br/>
-        <img src="https://github.com/user-attachments/assets/f613efdf-d333-4570-a201-eaadf5ec280b" alt="Mobile Dashboard" width="220"/>
-      </td>
-    </tr>
-  </table>
-</div>
+### 🌐 Web Dashboard (Clinical Risk Assessment)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9a111726-f88e-4ce0-8159-a0b3c91c1af8" alt="Web Data Entry" width="48%" />
+  &nbsp;
+  <img src="https://github.com/user-attachments/assets/02b1ebf4-88ef-4c61-8c51-3218ef00aa57" alt="Web CHD Prediction" width="48%" />
+</p>
+
+### 📱 Android Application (Flutter Native UI)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ec77921c-62df-4b4a-8870-0557e889e2d1" alt="Mobile App Authentication" width="220" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/f613efdf-d333-4570-a201-eaadf5ec280b" alt="Mobile Risk Dashboard" width="220" />
+</p>
 
 ---
 
