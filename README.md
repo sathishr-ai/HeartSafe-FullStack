@@ -48,11 +48,17 @@
     <tr>
       <td>
         <!-- WEB APP SCREENSHOT GOES HERE -->
-        <img src="https://via.placeholder.com/600x400/0d1117/58a6ff?text=Drop+Web+App+Screenshot+Here" alt="Web Application Output" width="450"/>
+        <img src=<img width="1911" height="1029" alt="Screenshot 2026-03-20 120640" src="https://github.com/user-attachments/assets/9a111726-f88e-4ce0-8159-a0b3c91c1af8" />
+        <img src=<img width="1918" height="1064" alt="Screenshot 2026-03-20 120702" src="https://github.com/user-attachments/assets/02b1ebf4-88ef-4c61-8c51-3218ef00aa57" />
+
+
       </td>
       <td>
         <!-- MOBILE APP SCREENSHOT GOES HERE -->
-        <img src="https://via.placeholder.com/250x400/0d1117/3fb950?text=Drop+Mobile+App+Screenshot+Here" alt="Mobile Application Output" width="250"/>
+        <img src=![WhatsApp Image 2026-03-20 at 12 08 01 PM](https://github.com/user-attachments/assets/ec77921c-62df-4b4a-8870-0557e889e2d1)
+        <img src=![WhatsApp Image 2026-03-20 at 12 09 34 PM](https://github.com/user-attachments/assets/f613efdf-d333-4570-a201-eaadf5ec280b)
+
+
       </td>
     </tr>
   </table>
