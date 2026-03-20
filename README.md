@@ -25,7 +25,7 @@
 <a href="https://heartsafe-backend.onrender.com/api/health">
   <img src="https://img.shields.io/badge/Live_API_Status-success?style=for-the-badge&logo=render&logoColor=white" alt="API Status">
 </a>
-<a href="https://github.com/sathishr-ai/heartsafe-backend/releases/download/v1.0/app-release.apk">
+<a href="https://github.com/sathishr-ai/HeartSafe-FullStack/releases/download/v1.0/app-release.apk">
   <img src="https://img.shields.io/badge/Download_Android_APK-green?style=for-the-badge&logo=android&logoColor=white" alt="Download APK">
 </a>
 
