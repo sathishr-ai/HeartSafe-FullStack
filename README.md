@@ -194,6 +194,36 @@ POST /api/predict/single
 
 ---
 
+<img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=📡%20REST%20API%20Endpoint%20Documentation&fontColor=ffffff&fontSize=22" width="100%"/>
+
+> *Complete HTTP endpoint map powering the HeartSafe diagnostic pipeline. All routes are served under the base URL:* `https://heartsafe-backend.onrender.com`
+
+<div align="center">
+
+| Method | Endpoint | Auth | Description |
+|:---:|:---|:---:|:---|
+| `POST` | `/api/auth/login` | ❌ | Authenticate user credentials and return session token |
+| `POST` | `/api/auth/register` | ❌ | Create a new clinical user account |
+| `POST` | `/api/auth/logout` | ❌ | Terminate the active user session |
+| `POST` | `/api/predictions/single` | ✅ | Submit single patient data and receive CHD risk score |
+| `POST` | `/api/predictions/batch` | ✅ | Upload multi-patient CSV array for mass risk analysis |
+| `GET` | `/api/predictions/list` | ✅ | Retrieve all historical prediction records from MongoDB |
+| `POST` | `/api/exports/pdf` | 🔒 | Generate and export a PDF diagnostic report |
+| `POST` | `/api/exports/csv` | 🔒 | Convert batch predictions into downloadable CSV format |
+| `POST` | `/api/followup/schedule` | ✅ | Schedule a clinical followup appointment |
+| `GET` | `/api/followup/list` | ✅ | Fetch all scheduled followup entries |
+| `PUT` | `/api/followup/:id` | ✅ | Update an existing followup record |
+| `DELETE` | `/api/followup/:id` | ✅ | Remove a followup entry by ID |
+| `GET` | `/api/health` | ❌ | Verify live server status and uptime |
+
+</div>
+
+<p align="center">
+  <sub>❌ Public &nbsp;&nbsp; ✅ Token Required &nbsp;&nbsp; 🔒 JWT Middleware Protected</sub>
+</p>
+
+---
+
 <img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=🚀%20Zero-to-Deployment%20Sandbox&fontColor=ffffff&fontSize=22" width="100%"/>
 
 Want to run the pipeline locally and intercept the Neural Network payloads?
