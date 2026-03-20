@@ -46,19 +46,17 @@
       <td align="center"><b>📱 Mobile Android Interface</b></td>
     </tr>
     <tr>
-      <td>
-        <!-- WEB APP SCREENSHOT GOES HERE -->
-        <img src=<img width="1911" height="1029" alt="Screenshot 2026-03-20 120640" src="https://github.com/user-attachments/assets/9a111726-f88e-4ce0-8159-a0b3c91c1af8" />
-        <img src=<img width="1918" height="1064" alt="Screenshot 2026-03-20 120702" src="https://github.com/user-attachments/assets/02b1ebf4-88ef-4c61-8c51-3218ef00aa57" />
-
-
+      <td valign="top">
+        <!-- WEB APP SCREENSHOTS -->
+        <img src="https://github.com/user-attachments/assets/9a111726-f88e-4ce0-8159-a0b3c91c1af8" alt="Web Prediction Setup" width="450"/>
+        <br/><br/>
+        <img src="https://github.com/user-attachments/assets/02b1ebf4-88ef-4c61-8c51-3218ef00aa57" alt="Web Prediction Output" width="450"/>
       </td>
-      <td>
-        <!-- MOBILE APP SCREENSHOT GOES HERE -->
-        <img src=![WhatsApp Image 2026-03-20 at 12 08 01 PM](https://github.com/user-attachments/assets/ec77921c-62df-4b4a-8870-0557e889e2d1)
-        <img src=![WhatsApp Image 2026-03-20 at 12 09 34 PM](https://github.com/user-attachments/assets/f613efdf-d333-4570-a201-eaadf5ec280b)
-
-
+      <td valign="top">
+        <!-- MOBILE APP SCREENSHOTS -->
+        <img src="https://github.com/user-attachments/assets/ec77921c-62df-4b4a-8870-0557e889e2d1" alt="Mobile Login" width="220"/>
+        <br/><br/>
+        <img src="https://github.com/user-attachments/assets/f613efdf-d333-4570-a201-eaadf5ec280b" alt="Mobile Dashboard" width="220"/>
       </td>
     </tr>
   </table>
