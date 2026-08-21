@@ -1856,6 +1856,36 @@
         ::-webkit-scrollbar-thumb:hover {
             background: var(--primary);
         }
+
+        /* UI Bug Fixes - Professional Adjustments */
+        .user-info:hover {
+            background: rgba(255, 255, 255, 0.25) !important;
+            /* Keep it dark enough for white text to be visible */
+        }
+
+        .user-info:hover span,
+        .user-info:hover i,
+        .user-info:hover .logout-btn {
+            color: white !important;
+        }
+
+        .tab {
+            outline: none !important;
+            -webkit-tap-highlight-color: transparent !important;
+        }
+
+        /* Fix the white appearing on click/hover for inactive tabs */
+        .tab:not(.active):hover,
+        .tab:not(.active):active,
+        .tab:not(.active):focus {
+            background: rgba(0, 0, 0, 0.05) !important;
+            color: #333 !important;
+        }
+
+        /* Keep text dark on inactive tab */
+        .tab:not(.active) {
+            color: #555 !important;
+        }
     </style>
 </head>
 
