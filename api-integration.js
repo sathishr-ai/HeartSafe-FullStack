@@ -1,6 +1,6 @@
 console.log('📋 API-Integration Script Loading...');
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://heartsafe-fullstack.onrender.com/api';
 let authToken = localStorage.getItem('authToken');
 
 async function apiCall(endpoint, method = 'GET', data = null) {
