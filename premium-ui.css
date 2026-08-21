@@ -297,3 +297,10 @@ tr:hover td {
 ::-webkit-scrollbar-thumb:hover {
     background: #94A3B8;
 }
+
+
+.user-info span, .user-info div { color: var(--primary) !important; }
+.tab-container { background: white !important; padding: 6px !important; border-radius: 12px !important; box-shadow: 0 4px 6px rgba(0,0,0,0.05) !important; border: 1px solid rgba(0,0,0,0.1) !important; }
+.tab { border-radius: 8px !important; font-weight: 600 !important; color: var(--text-secondary) !important; }
+.tab.active { background: var(--gradient-primary) !important; color: white !important; box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3) !important; }
+.tab:hover:not(.active) { background: #f8fafc !important; color: var(--primary) !important; }
